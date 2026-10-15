@@ -37,11 +37,11 @@ La prueba se ejecutó utilizando dos placas idénticas ESP32-C6-DevKitC-1, equip
 
 La pérdida de paquetes (PER, *Packet Error Rate*) se calcula como:
 
-$$\text{PER}(\%) = \frac{N_{\text{tx}} - N_{\text{rx}}}{N_{\text{tx}}} \times 100$$
+> **PER (%)** = [ (N<sub>tx</sub> - N<sub>rx</sub>) / N<sub>tx</sub> ] × 100
 
 El porcentaje de entrega (PDR) es:
 
-$$\text{PDR}(\%) = 100 - \text{PER}(\%)$$
+> **PDR (%)** = 100 - PER (%)
 
 Con 100 paquetes transmitidos, cada paquete perdido representa un punto porcentual de PER (resolución de 1 %). Para el análisis de los datos medidos se distinguen dos criterios:
 
@@ -56,7 +56,7 @@ Con 100 paquetes transmitidos, cada paquete perdido representa un punto porcentu
 
 De acuerdo con las mediciones realizadas, el canal 20 presentó el nivel de energía detectada más bajo de los 16 canales evaluados, registrando −94 dBm. En la caracterización del enlace, se conservó un PER del 0 % (inferior al 1 %) en ambas direcciones hasta los 20 m de separación. A 30 m, una de las direcciones alcanzó un 1 % de pérdida y la otra permaneció en 0 %, por lo que dicha distancia cumple con el criterio inclusivo de entrega de al menos 99 %, pero no el criterio estricto de PER inferior al 1 % en ambos sentidos simultáneamente.
 
-El umbral de RSSI medido asociado con una entrega igual o superior al 99 % se situaló en alrededor de −70 dBm. La relación RSSI-PER depende de la interferencia, orientación de antenas, obstáculos, reflexiones y variación temporal del canal, por lo que se recomienda reservar margen de enlace durante la planificación técnica.
+El umbral de RSSI medido asociado con una entrega igual o superior al 99 % se situó en alrededor de −70 dBm. La relación RSSI-PER depende de la interferencia, orientación de antenas, obstáculos, reflexiones y variación temporal del canal, por lo que se recomienda reservar margen de enlace durante la planificación técnica.
 
 ### 2.2 Resumen para Gustavo (planificación del despliegue)
 
@@ -179,9 +179,9 @@ IEEE 802.15.4 utiliza modulación O-QPSK con espectro ensanchado por secuencia d
 
 El presupuesto de enlace teórico se expresa como:
 
-$$RSSI \approx P_{TX}+G_{TX}+G_{RX}-PL$$
+> **RSSI** ≈ P<sub>TX</sub> + G<sub>TX</sub> + G<sub>RX</sub> - PL
 
-Con la potencia de transmisión configurada en 0 dBm y las ganancias de antena integradas estimadas en 2 dBi en cada extremo, la pérdida de trayecto ($PL$) en espacio libre se incrementa teóricamente unos 6 dB al duplicar la distancia. Las mediciones registradas reflejan estas tendencias ideales con variaciones atribuibles a la orientación de las antenas en las placas y reflexiones del suelo.
+Con la potencia de transmisión configurada en 0 dBm y las ganancias de antena integradas estimadas en 2 dBi en cada extremo, la pérdida de trayecto (PL) en espacio libre se incrementa teóricamente unos 6 dB al duplicar la distancia. Las mediciones registradas reflejan estas tendencias ideales con variaciones atribuibles a la orientación de las antenas en las placas y reflexiones del suelo.
 
 ---
 
@@ -262,8 +262,8 @@ A continuación se presentan los datos empíricos obtenidos en las pruebas de ca
 ### 10.1 Interpretación de los resultados experimentales
 
 * El RSSI disminuye de forma continua con la distancia, pasando de −42 dBm a 1 m hasta −82 dBm a 50 m.
-* Entre 1 m y 20 m, la tasa de error de paquete es 0 % en ambas direcciones ($PDR = 100\%$).
-* A 30 m, el PER de B→A registró un 1 % de pérdida (1 paquete de 100), mientras que A→B se mantuvo en 0 %. Esto confirma que a 30 m se satisface el criterio inclusivo ($PDR \ge 99\%$), pero se alcanza el límite del criterio estricto ($PER < 1\%$).
+* Entre 1 m y 20 m, la tasa de error de paquete es 0 % en ambas direcciones (PDR = 100%).
+* A 30 m, el PER de B→A registró un 1 % de pérdida (1 paquete de 100), mientras que A→B se mantuvo en 0 %. Esto confirma que a 30 m se satisface el criterio inclusivo (PDR ≥ 99%), pero se alcanza el límite del criterio estricto (PER < 1%).
 * A partir de los 40 m, las pérdidas aumentaron significativamente (PER entre 6 % y 9 %), degradando la calidad del enlace por debajo del requisito operacional.
 * Se observó una leve asimetría en el RSSI entre direcciones (2 a 3 dB), atribuible a pequeñas diferencias en la orientación de las antenas impresas de las placas durante la toma de datos.
 
