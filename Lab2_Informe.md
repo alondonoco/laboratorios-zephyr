@@ -215,18 +215,6 @@ Dentro de la arquitectura de referencia para IoT (ISO/IEC 30141), la red malla T
 
 ---
 
-## 10. Lista de verificación para pruebas en terreno
-
-1. [x] Confirmar que todos los nodos compartan el mismo canal (Canal 15) y *Network Key*.
-2. [x] Validar los roles de la red utilizando `ot state` (1 Líder, N Routers).
-3. [x] Inspeccionar la tabla de vecinos y de enrutamiento con `ot router table`.
-4. [x] Verificar la conectividad unicast realizando ping a la dirección ML-EID del nodo destino.
-5. [x] Probar la redundancia simulando la desconexión de un router intermedio y validando la conmutación a la ruta de respaldo.
-6. [x] Al reconectar un nodo, confirmar que inicie el stack Thread (`ot thread start`) y asuma su rol en la malla.
-7. [x] Al finalizar los ensayos, limpiar los filtros de prueba con `ot macfilter rss clear` en todos los nodos.
-
----
-
 ## 11. Conclusiones
 
 1. La pila OpenThread sobre ESP32-C6 selecciona dinámicamente las rutas óptimas basándose en la calidad acumulada de los enlaces (LQI/Costo), prefiriendo rutas de múltiples saltos de alta calidad sobre enlaces directos degradados.
