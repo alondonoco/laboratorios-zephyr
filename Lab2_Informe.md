@@ -225,7 +225,7 @@ Dentro de la arquitectura de referencia para IoT (ISO/IEC 30141), la red malla T
 
 ---
 
-## 11. Referencias
+## Referencias
 
 1. Guía de laboratorio, *Lab 2: Thread Mesh — Addressing, Multi-Hop and Self-Healing*, GreenField Technologies — SoilSense.
 2. OpenThread CLI Reference: https://openthread.io/reference/cli/commands
