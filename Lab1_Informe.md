@@ -244,7 +244,7 @@ Para cada una de las distancias marcadas (1, 5, 10, 15, 20, 30, 40 y 50 m):
 
 ---
 
-## 10. Tabla de datos experimentales: distancia, RSSI y PER
+## 7. Tabla de datos experimentales: distancia, RSSI y PER
 
 A continuación se presentan los datos empíricos obtenidos en las pruebas de campo realizadas con una potencia TX de 0 dBm en el canal 20, empleando ráfagas de 100 pings de 64 bytes por dirección.
 
@@ -259,7 +259,7 @@ A continuación se presentan los datos empíricos obtenidos en las pruebas de ca
 | 40 | −75 | −77 | 6 | 9 | 94 | 91 |
 | 50 | −80 | −82 | 18 | 22 | 82 | 78 |
 
-### 10.1 Interpretación de los resultados experimentales
+### 7.1 Interpretación de los resultados experimentales
 
 * El RSSI disminuye de forma continua con la distancia, pasando de −42 dBm a 1 m hasta −82 dBm a 50 m.
 * Entre 1 m y 20 m, la tasa de error de paquete es 0 % en ambas direcciones (PDR = 100%).
@@ -267,13 +267,13 @@ A continuación se presentan los datos empíricos obtenidos en las pruebas de ca
 * A partir de los 40 m, las pérdidas aumentaron significativamente (PER entre 6 % y 9 %), degradando la calidad del enlace por debajo del requisito operacional.
 * Se observó una leve asimetría en el RSSI entre direcciones (2 a 3 dB), atribuible a pequeñas diferencias en la orientación de las antenas impresas de las placas durante la toma de datos.
 
-### 10.2 Conclusión de alcance según los datos medidos
+### 7.2 Conclusión de alcance según los datos medidos
 
 El alcance máximo que garantiza un **PER < 1 % en ambos sentidos simultáneamente** es de **20 metros**. Bajo un criterio ligeramente más flexible de **PDR ≥ 99 %**, el enlace es funcional hasta los **30 metros**. Para la planificación del sistema SoilSense, se adopta un diseño de separación de **15 metros**, lo que deja un margen de enlace de 4 a 6 dB frente a obstáculos y desvanecimientos.
 
 ---
 
-## 11. Resumen de rendimiento de una página para Gustavo
+## 8. Resumen de rendimiento de una página para Gustavo
 
 **Estado de los resultados:** datos experimentales medidos en campo.
 
@@ -293,7 +293,7 @@ El alcance máximo que garantiza un **PER < 1 % en ambos sentidos simultáneamen
 
 ---
 
-## 12. Lista de verificación de campo para Edwin
+## 9. Lista de verificación de campo para Edwin
 
 ### Guía de diagnóstico cuando un nodo no se une a la red
 
@@ -320,7 +320,7 @@ El alcance máximo que garantiza un **PER < 1 % en ambos sentidos simultáneamen
 
 ---
 
-## 13. Limitaciones del estudio y próximos pasos
+## 10. Limitaciones del estudio y próximos pasos
 
 1. **Condiciones del entorno:** Las mediciones fueron realizadas en línea de vista despejada. La presencia de humedad alta y follaje denso introducirá atenuación adicional que debe ser cuantificada en pruebas subsiguientes.
 2. **Resolución del PER:** Al utilizar ráfagas de 100 pings, la resolución de medición es de 1 %. Para caracterizaciones finales de producción se recomienda extender el tamaño de muestra a 1000 pings por punto.
