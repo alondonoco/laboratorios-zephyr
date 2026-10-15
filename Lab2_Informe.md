@@ -215,7 +215,7 @@ Dentro de la arquitectura de referencia para IoT (ISO/IEC 30141), la red malla T
 
 ---
 
-## 11. Conclusiones
+## 10. Conclusiones
 
 1. La pila OpenThread sobre ESP32-C6 selecciona dinámicamente las rutas óptimas basándose en la calidad acumulada de los enlaces (LQI/Costo), prefiriendo rutas de múltiples saltos de alta calidad sobre enlaces directos degradados.
 2. El uso de la dirección **ML-EID** es obligatorio para la capa de aplicación de SoilSense, garantizando que el tráfico alcance al sensor objetivo independientemente de las reestructuraciones de la topología.
@@ -225,7 +225,7 @@ Dentro de la arquitectura de referencia para IoT (ISO/IEC 30141), la red malla T
 
 ---
 
-## 12. Referencias
+## 11. Referencias
 
 1. Guía de laboratorio, *Lab 2: Thread Mesh — Addressing, Multi-Hop and Self-Healing*, GreenField Technologies — SoilSense.
 2. OpenThread CLI Reference: https://openthread.io/reference/cli/commands
