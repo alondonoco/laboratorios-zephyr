@@ -326,15 +326,6 @@ El alcance máximo que garantiza un **PER < 1 % en ambos sentidos simultáneamen
 2. **Resolución del PER:** Al utilizar ráfagas de 100 pings, la resolución de medición es de 1 %. Para caracterizaciones finales de producción se recomienda extender el tamaño de muestra a 1000 pings por punto.
 3. **Efecto de antena:** Se identificó una asimetría de 2 a 3 dB en el enlace provocada por el patrón de radiación omnidireccional no uniforme de la antena integrada en la placa ESP32-C6-DevKitC-1.
 
-### Próximos pasos experimentales y de despliegue
-
-* [x] Medir el nivel de energía de la banda de 2,4 GHz por canal.
-* [x] Establecer una red Thread punto a punto en el canal de menor interferencia.
-* [x] Caracterizar el RSSI y PER en función de la distancia en línea de vista.
-* [ ] Ejecutar pruebas de atenuación en parcela real con cultivos de prueba.
-* [ ] Evaluar la densidad de nodos requerida bajo topología de malla (Mesh) de OpenThread con múltiples saltos.
-* [ ] Ajustar la estimación de costos y cantidad de nodos para la arquitectura final de SoilSense.
-
 ---
 
 ## Referencias
