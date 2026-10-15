@@ -37,11 +37,11 @@ La prueba se ejecutó utilizando dos placas idénticas ESP32-C6-DevKitC-1, equip
 
 La pérdida de paquetes (PER, *Packet Error Rate*) se calcula como:
 
-$$PER(\%) = \frac{N_{tx}-N_{rx}}{N_{tx}}\times 100$$
+$$\text{PER}(\%) = \frac{N_{\text{tx}} - N_{\text{rx}}}{N_{\text{tx}}} \times 100$$
 
 El porcentaje de entrega (PDR) es:
 
-$$PDR(\%) = 100-PER(\%)$$
+$$\text{PDR}(\%) = 100 - \text{PER}(\%)$$
 
 Con 100 paquetes transmitidos, cada paquete perdido representa un punto porcentual de PER (resolución de 1 %). Para el análisis de los datos medidos se distinguen dos criterios:
 
